@@ -1,0 +1,47 @@
+CREATE DATABASE retropixel_bronze;
+
+USE retropixel_bronze;
+
+create table plataformas(
+	id_plataforma int auto_increment,
+    primary key (id_plataforma),
+    nome VARCHAR(100),
+    fabricante VARCHAR (100)
+);
+
+create table produtos(
+	id_produto int auto_increment,
+    primary key (id_produto),
+    nome_produto VARCHAR (150),
+    preco DECIMAL (10,2),
+    estoque int,
+    fkPlataforma int,
+    foreign key(fkPlataforma) references plataformas (id_plataforma)
+);
+
+create table itens_pedido(
+	fkPlataforma int,
+    fkProduto int,
+    foreign key(fkPlataforma) references plataformas (id_plataforma),
+    foreign key(fkProduto) references produtos (id_produto),
+    quantidade int,
+    preco_unitario DECIMAL(10,2)
+);
+
+create table clientes(
+	id_cliente int auto_increment,
+    primary key (id_cliente),
+    nome VARCHAR(150),
+    cpf VARCHAR (50),
+    email VARCHAR (150),
+    data_cadastro datetime
+);
+
+create table pedidos(
+	id_pedido int auto_increment,
+    primary key (id_pedido),
+    fkCliente int,
+    foreign key (fkCliente) references clientes (id_cliente),
+    data_pedido datetime,
+    valor_total decimal (10,2)
+);
