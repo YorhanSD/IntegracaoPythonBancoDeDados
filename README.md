@@ -2,6 +2,20 @@
 
 <br>
 
+<h2> RESUMO </h2>
+
+<br>
+
+<h3>A aplicação utiliza a arquitetura Medallion, dividida em três camadas:</H3>
+
+- Bronze: geração e armazenamento de dados brutos, incluindo inconsistências simuladas.
+- Silver: limpeza, padronização e tratamento dos dados utilizando Pandas.
+- Gold: processamento de consultas analíticas e geração de indicadores, como faturamento mensal, produtos mais vendidos e clientes mais ativos.
+
+<h3>O projeto demonstra a construção de um pipeline ETL, integração entre Python e MySQL e preparação de dados para análises e visualizações futuras no Power BI.</h3>
+
+<br>
+
 <h2> CAMADA BRONZE </h2>
 <h3> Bibliotecas utilizadas na camada bronze: Faker.</h3>
 
