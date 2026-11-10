@@ -2,6 +2,11 @@
 
 <br>
 
+<h2> CAMADA BRONZE </h2>
+<h3> Bibliotecas utilizadas na camada bronze: Faker.</h3>
+
+<br>
+
 <div>
   <h3> Adiciona dados no Banco de Dados existente por meio de código. </h3>
   <h3> No meu caso, o banco utilizado se chama : retropixel_bronze. </h3>
@@ -34,7 +39,31 @@
 
 <img width="820" height="882" alt="Banco de Dados MySQL Print Clientes" src="https://github.com/user-attachments/assets/f5ac2d54-4f1e-461f-8a39-fb46c42b8ea8" />
 
-<img width="820" height="882" alt="Banco de Dados MySQL Print Clientes" src="https://github.com/user-attachments/assets/0438b621-d6b8-40f7-91e6-695d0fd473df" />
+<br>
 
+<h2> CAMADA SILVER </h2>
+
+<br>
+
+<h3> A camada Silver é responsável por extrair os dados armazenados no banco Bronze, aplicar regras de limpeza, padronização e validação, e disponibilizar os dados tratados em um banco MySQL independente.</h3>
+<h3> Bibliotecas utilizadas na camada silver: Pandas, SQLAlchemy e MySQL Connector.</h3>
+
+<br>
+
+<h3> Etapas de Processamento </h3>
+
+1. Criação e verificação do banco de dados `retropixel_silver`.
+2. Extração das tabelas `plataformas`, `produtos`, `clientes`, `pedidos` e `itens_pedido` da camada Bronze.
+3. Aplicação de regras específicas de tratamento para cada conjunto de dados.
+4. Carregamento dos DataFrames tratados nas respectivas tabelas do banco Silver.
+5. Exibição de uma comparação entre os registros de clientes das camadas Bronze e Silver.
+
+<h3> Correções </h3>
+
+- Padronização de textos e remoção de espaços excedentes.
+- Conversão de valores numéricos e datas.
+- Normalização de CPF, passaportes e endereços de e-mail.
+- Tratamento de valores nulos e registros inválidos.
+- Remoção de registros que não atendem a determinados critérios de validação.
 
 
