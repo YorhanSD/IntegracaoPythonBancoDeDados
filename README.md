@@ -9,7 +9,7 @@
 
 <div>
   <h3> Adiciona dados no Banco de Dados existente por meio de código. </h3>
-  <h3> No meu caso, o banco utilizado se chama : retropixel_bronze. </h3>
+  <h3> No meu caso, o banco utilizado se chama : `retropixel_silver`. </h3>
   <h3> Cada tabela é preenchida com erros de digitação e espaços em branco propositalmente. </h3>
   <h3> As tabelas possuem um grande volume de dados, simulando assim uma situação comum em diversos tipos de bancos. </h3>
 </div>
@@ -45,8 +45,10 @@
 
 <br>
 
-<h3> A camada Silver é responsável por extrair os dados armazenados no banco Bronze, aplicar regras de limpeza, padronização e validação, e disponibilizar os dados tratados em um banco MySQL independente.</h3>
-<h3> Bibliotecas utilizadas na camada silver: Pandas, SQLAlchemy e MySQL Connector.</h3>
+<div>
+    <h3> A camada Silver é responsável por extrair os dados armazenados no banco Bronze, aplicar regras de limpeza, padronização e validação, e disponibilizar os dados tratados em um banco MySQL independente.</h3>
+    <h3> Bibliotecas utilizadas na camada silver: Pandas, SQLAlchemy e MySQL Connector.</h3>
+</div>
 
 <br>
 
@@ -66,4 +68,15 @@
 - Tratamento de valores nulos e registros inválidos.
 - Remoção de registros que não atendem a determinados critérios de validação.
 
+<br>
+
+<h2> CAMADA OURO </h2>
+
+<br>
+
+<div>
+    <h3> Consultar essas tabelas, gerar indicadores e armazenar os resultados em um banco separado chamado: retropixel_gold </h3>
+</div>
+
+<br>
 
