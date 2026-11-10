@@ -15,7 +15,7 @@
   <h3> Ao executar o programa no terminal do vscode temos : </h3>
 </div>
 
-<img width="556" height="672" alt="Banco Bronze Terminal Print" src="https://github.com/user-attachments/assets/a33a722b-318f-41d8-bc05-fadd843d2f18" />
+<img width="556" height="672" alt="Banco Bronze Terminal Print" src="https://github.com/user-attachments/assets/0c0d31c8-5ea4-4e37-be79-fb9d51d2406e" />
 
 <br>
 <br>
@@ -31,6 +31,8 @@
 <div>
   <h3> No Banco de Dados, Ao executar o comando SELECT em Clientes temos : </h3>
 </div>
+
+<img width="820" height="882" alt="Banco de Dados MySQL Print Clientes" src="https://github.com/user-attachments/assets/f5ac2d54-4f1e-461f-8a39-fb46c42b8ea8" />
 
 <img width="820" height="882" alt="Banco de Dados MySQL Print Clientes" src="https://github.com/user-attachments/assets/0438b621-d6b8-40f7-91e6-695d0fd473df" />
 
